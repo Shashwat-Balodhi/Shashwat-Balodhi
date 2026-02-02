@@ -202,22 +202,21 @@ print(me.say_hi())
 
 <div align="center">
   
-<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Shashwat-Balodhi&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=C9D1D9" />
+<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Shashwat-Balodhi&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=C9D1D9&count_private=true&include_all_commits=true" />
 <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com/?user=Shashwat-Balodhi&theme=radical&hide_border=true&background=0D1117&stroke=0D1117&ring=F85D7F&fire=F85D7F&currStreakLabel=F85D7F" />
 
-<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shashwat-Balodhi&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=C9D1D9&langs_count=8" />
-<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api/wakatime?username=Shashwat-Balodhi&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=C9D1D9" />
-
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Shashwat-Balodhi&theme=radical&no-frame=true&no-bg=true&row=1&column=6&margin-w=15&margin-h=15" width="90%" alt="Trophy" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shashwat-Balodhi&custom_title=Contribution%20Graph&bg_color=0D1117&color=F85D7F&line=F85D7F&point=FFFFFF&area_color=0D1117&area=true&hide_border=true" width="95%" />
+  <img width="70%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shashwat-Balodhi&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=C9D1D9&langs_count=10" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shashwat-Balodhi&custom_title=Contribution%20Graph&bg_color=0D1117&color=F85D7F&line=F85D7F&point=FFFFFF&area_color=0D1117&area=true&hide_border=true&height=300" width="95%" />
 </div>
 
 ---
