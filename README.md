@@ -105,9 +105,9 @@ print(me.say_hi())
 
 | Project | Description | Tech Stack | Impact |
 |---------|-------------|------------|--------|
-| 🎯 **[Virgo's Whisper AI](https://github.com/Shashwat-Balodhi)** | Real-time AI co-pilot for first responders with <2s latency | LLMs, STT/TTS, Multi-agent | 🏆 Hackathon Winner |
-| ⚖️ **[AIPR](https://github.com/Shashwat-Balodhi)** | Legal document proofreader with OCR pipeline | Transformers, OCR, NLP | 90%+ accuracy, 60% time saved |
-| 🌐 **[HMM Tracker](https://github.com/Shashwat-Balodhi)** | LLM-driven logistics automation system | BrowserUse, LLM Agents | 80% effort reduction |
+| 🎯 **[Virgo's Whisper AI](https://github.com/Shashwat-Balodhi/Virgo-s-Whisper-AI)** | Real-time AI co-pilot for first responders with <2s latency | LLMs, STT/TTS, Multi-agent | 🏆 Hackathon Winner |
+| ⚖️ **[AIPR](https://github.com/Shashwat-Balodhi/AIPR_Frontend)** | Legal document proofreader with OCR pipeline | Transformers, OCR, NLP | 90%+ accuracy, 60% time saved |
+| 🌐 **[HMM Tracker](https://github.com/Shashwat-Balodhi/assignment-without-webui)** | LLM-driven logistics automation system | BrowserUse, LLM Agents | 80% effort reduction |
 
 </div>
 
