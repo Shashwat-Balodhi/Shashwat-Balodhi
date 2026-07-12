@@ -1,0 +1,118 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="bannerClip">
+      <rect x="0" y="0" width="1200" height="320" rx="6"/>
+    </clipPath>
+    <clipPath id="avatarClip">
+      <circle cx="150" cy="160" r="78"/>
+    </clipPath>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ff66" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff66" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00ff66" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .mono { font-family: 'Courier New', Consolas, monospace; }
+      .flicker { animation: flick 4.2s infinite steps(1); }
+      @keyframes flick {
+        0%, 91%, 95%, 100% { opacity: 1; }
+        92% { opacity: 0.35; }
+        93% { opacity: 0.85; }
+        94% { opacity: 0.5; }
+      }
+      .cursor { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
+      .ring { transform-origin: 150px 160px; animation: spin 7s linear infinite; }
+      @keyframes spin { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+      .ring2 { transform-origin: 150px 160px; animation: spinRev 11s linear infinite; }
+      @keyframes spinRev { from { transform: rotate(360deg);} to { transform: rotate(0deg);} }
+    </style>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- base background -->
+    <rect x="0" y="0" width="1200" height="320" fill="#03080a"/>
+
+    <!-- grid -->
+    <g stroke="#0aff66" stroke-opacity="0.07" stroke-width="1">
+      <g>
+        <line x1="0" y1="0" x2="1200" y2="0"/>
+      </g>
+      <!-- vertical grid lines -->
+      <path d="M0 0 V320 M60 0 V320 M120 0 V320 M180 0 V320 M240 0 V320 M300 0 V320 M360 0 V320 M420 0 V320 M480 0 V320 M540 0 V320 M600 0 V320 M660 0 V320 M720 0 V320 M780 0 V320 M840 0 V320 M900 0 V320 M960 0 V320 M1020 0 V320 M1080 0 V320 M1140 0 V320 M1200 0 V320"/>
+      <path d="M0 0 H1200 M0 40 H1200 M0 80 H1200 M0 120 H1200 M0 160 H1200 M0 200 H1200 M0 240 H1200 M0 280 H1200 M0 320 H1200"/>
+    </g>
+
+    <!-- matrix rain columns -->
+    <g class="mono" font-size="16" fill="#0aff66" opacity="0.5">
+      <text x="30" y="-20"><animate attributeName="y" from="-40" to="360" dur="3.1s" begin="0s" repeatCount="indefinite"/>01</text>
+      <text x="80" y="-60"><animate attributeName="y" from="-40" to="360" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>ｱ</text>
+      <text x="130" y="-90"><animate attributeName="y" from="-40" to="360" dur="3.6s" begin="0.9s" repeatCount="indefinite"/>10</text>
+      <text x="950" y="-30"><animate attributeName="y" from="-40" to="360" dur="2.8s" begin="0.2s" repeatCount="indefinite"/>ｳ</text>
+      <text x="1000" y="-70"><animate attributeName="y" from="-40" to="360" dur="3.3s" begin="0.6s" repeatCount="indefinite"/>11</text>
+      <text x="1050" y="-50"><animate attributeName="y" from="-40" to="360" dur="2.6s" begin="1.1s" repeatCount="indefinite"/>ｴ</text>
+      <text x="1100" y="-80"><animate attributeName="y" from="-40" to="360" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>00</text>
+      <text x="880" y="-40"><animate attributeName="y" from="-40" to="360" dur="3.0s" begin="1.4s" repeatCount="indefinite"/>ｶ</text>
+      <text x="700" y="-40"><animate attributeName="y" from="-40" to="360" dur="4.2s" begin="0.7s" repeatCount="indefinite"/>ｼ</text>
+    </g>
+
+    <!-- avatar with rotating targeting rings -->
+    <g>
+      <circle cx="150" cy="160" r="92" fill="none" stroke="#0aff66" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="6 10" class="ring"/>
+      <circle cx="150" cy="160" r="100" fill="none" stroke="#ff2b4d" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="2 14" class="ring2"/>
+      <circle cx="150" cy="160" r="82" fill="#03080a" stroke="#0aff66" stroke-width="2" filter="url(#glow)"/>
+      <image href="https://avatars.githubusercontent.com/u/118597613?v=4" x="72" y="82" width="156" height="156" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
+      <circle cx="150" cy="160" r="78" fill="none" stroke="#0aff66" stroke-width="2"/>
+      <!-- corner brackets -->
+      <path d="M60 90 L60 78 L72 78" stroke="#ff2b4d" stroke-width="2" fill="none"/>
+      <path d="M240 90 L240 78 L228 78" stroke="#ff2b4d" stroke-width="2" fill="none"/>
+      <path d="M60 230 L60 242 L72 242" stroke="#ff2b4d" stroke-width="2" fill="none"/>
+      <path d="M240 230 L240 242 L228 242" stroke="#ff2b4d" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- glitch title text: RGB split layers -->
+    <g class="mono" font-size="46" font-weight="bold">
+      <text x="300" y="140" fill="#ff2b4d" opacity="0.7">
+        SHASHWAT BALODHI
+        <animate attributeName="x" values="300;296;302;300" keyTimes="0;0.9;0.95;1" dur="3.4s" repeatCount="indefinite"/>
+      </text>
+      <text x="304" y="140" fill="#00e5ff" opacity="0.7">
+        SHASHWAT BALODHI
+        <animate attributeName="x" values="304;309;301;304" keyTimes="0;0.9;0.95;1" dur="3.7s" repeatCount="indefinite"/>
+      </text>
+      <text x="302" y="140" fill="#eafff2" class="flicker">SHASHWAT BALODHI</text>
+    </g>
+
+    <!-- subtitle -->
+    <g class="mono" font-size="20" fill="#0aff66">
+      <text x="302" y="180">&gt; AI_ENGINEER // NEURAL_SYSTEMS_LAB</text>
+      <text x="302" y="210" fill="#7dffa8" opacity="0.85">STATUS: <tspan fill="#0aff66">ONLINE</tspan><tspan class="cursor">_</tspan></text>
+    </g>
+
+    <!-- lower system readout -->
+    <g class="mono" font-size="13" fill="#0aff66" opacity="0.55">
+      <text x="302" y="245">root@shashwat:~$ ./deploy_intelligence --mode=production</text>
+      <text x="302" y="264">[OK] LLM_CORE  [OK] RAG_ENGINE  [OK] VISION_STACK  [OK] MLOPS_PIPELINE</text>
+    </g>
+
+    <!-- scanline sweep -->
+    <rect x="0" y="0" width="1200" height="60" fill="url(#scanGrad)">
+      <animate attributeName="y" from="-60" to="320" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- vignette + border -->
+    <rect x="0" y="0" width="1200" height="320" fill="url(#vignette)"/>
+    <rect x="1" y="1" width="1198" height="318" fill="none" stroke="#0aff66" stroke-opacity="0.4" stroke-width="2"/>
+  </g>
+</svg>
